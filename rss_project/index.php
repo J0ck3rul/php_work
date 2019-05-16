@@ -5,6 +5,9 @@ $url = "http://rss.slashdot.org/Slashdot/slashdotMain";
 $rss = new DOMDocument();
 $rss->load($url);
 
+
+
+
 $feed = array();
 foreach ($rss->getElementsByTagName('item') as $node) {
     $item = array ( 
